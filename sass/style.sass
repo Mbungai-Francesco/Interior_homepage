@@ -3,6 +3,18 @@
   padding: 0
   font-family: 'League Spartan', sans-serif
 
+$textColor: hsl(0, 0%, 63%)
+
+svg:hover
+  cursor: pointer
+
+li
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+
 body
   justify-content: space-around
   display: flex
@@ -34,12 +46,58 @@ main
   img
     position: absolute
     z-index: -1
-    
+  header
+    padding: 4em
+    display: flex
+    nav
+      margin-left: 2em
+    ul
+      display: flex
+      color: hsl(0, 0%, 100%)
+      li
+        margin-inline: 1em
+        transition: 0.3s 
+      .line
+        border-bottom: 2px white solid
+        margin-top: 1em
+        transition: 0.3s 
+        width: 0%
+      li:hover > .line
+        width: 100%
   
 #textSlide
   @include spacing(9,end,1,7)
-  background-color: blue
-  
+  padding-top: 7.9em
+  background-color: hsl(0, 0%, 100%)
+  position: relative
+  .text
+    margin-inline: 4.5em
+  h1
+    font-size: 2.7em
+    font-weight: 600
+    margin-bottom: .7em
+  p
+    color: $textColor
+    line-height: 1.3em
+    margin-bottom: 1.5em
+  h4
+    text-transform: uppercase
+    font-weight: 500
+    letter-spacing: 0.8em
+  .sliderBtns
+    display: flex
+    position: absolute
+    bottom: 0
+    .btns
+      display: flex
+      width: 3.75em
+      aspect-ratio: 1/1
+      background-color: black
+      align-items: center
+      justify-content: space-around
+    .btns:hover
+      cursor: pointer
+
 #imgLeft
   @include spacing(1,3,8,end)
   background-color: plum

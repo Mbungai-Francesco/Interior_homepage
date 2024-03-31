@@ -1,3 +1,9 @@
+#about p, #textSlide p {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,9 +37,6 @@ main {
   display: grid;
   grid-template-columns: 10% 10% 9.1% 0.9% 10% 10% 8.3% 1.7% 8.6% 11.4% 10% 10%;
   grid-template-rows: 10% 10% 10% 10% 10% 10% 6.8% 3.2% 10% 10% 10%;
-}
-
-main {
   background-color: plum;
 }
 
@@ -85,21 +88,19 @@ main {
   position: relative;
 }
 #textSlide .text {
-  margin-inline: 4.5em;
+  margin-inline: 4.5em 4em;
 }
 #textSlide h1 {
   font-size: 2.7em;
   font-weight: 600;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.65em;
 }
 #textSlide p {
-  color: hsl(0, 0%, 63%);
-  line-height: 1.3em;
   margin-bottom: 1.5em;
 }
 #textSlide h4 {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.8em;
 }
 #textSlide .sliderBtns {
@@ -132,9 +133,15 @@ main {
   grid-column-end: span 6;
   grid-row-start: 8;
   grid-row-end: span end;
-  background-color: brown;
+  background-color: white;
+  padding-inline: 3em 3em;
+  padding-block: 4em 0;
 }
-
+#about h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
 #imgRight {
   grid-column-start: 10;
   grid-column-end: span end;

@@ -1,0 +1,52 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  justify-content: space-around
+  display: flex
+  width: 100%
+  height: fit-content
+  overflow-x: hidden
+
+main
+  width: 87.5em
+  height: 800px
+  display: grid
+  grid-template-columns: 10% 10% 9.1% .9% 10% 10% 8.3% 1.7% 8.6% 11.4% 10% 10%
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 6.8% 3.2% 10% 10% 10%
+
+@mixin spacing($cs,$ce,$rs,$re)
+  grid-column-start: $cs
+  grid-column-end: span $ce
+  grid-row-start: $rs
+  grid-row-end: span $re
+  
+main
+  background-color: plum
+  
+#imgSlider
+  @include spacing(1,7,1,7)
+  position: relative
+  background-color: pink
+  z-index: 1
+  img
+    position: absolute
+    z-index: -1
+    
+  
+#textSlide
+  @include spacing(8,end,1,7)
+  background-color: blue
+  
+#imgLeft
+  @include spacing(1,3,8,end)
+  background-color: plum
+  
+#about
+  @include spacing(4,6,8,end)
+  background-color: brown
+
+#imgRight
+  @include spacing(10,end,8,end)
+  

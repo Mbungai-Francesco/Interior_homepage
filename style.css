@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+main {
+  width: 87.5em;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 10% 10% 9.1% 0.9% 10% 10% 8.3% 1.7% 8.6% 11.4% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 6.8% 3.2% 10% 10% 10%;
+}
+
+main {
+  background-color: plum;
+}
+
+#imgSlider {
+  grid-column-start: 1;
+  grid-column-end: span 7;
+  grid-row-start: 1;
+  grid-row-end: span 7;
+  position: relative;
+  background-color: pink;
+  z-index: 1;
+}
+#imgSlider img {
+  position: absolute;
+  z-index: -1;
+}
+
+#textSlide {
+  grid-column-start: 8;
+  grid-column-end: span end;
+  grid-row-start: 1;
+  grid-row-end: span 7;
+  background-color: blue;
+}
+
+#imgLeft {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 8;
+  grid-row-end: span end;
+  background-color: plum;
+}
+
+#about {
+  grid-column-start: 4;
+  grid-column-end: span 6;
+  grid-row-start: 8;
+  grid-row-end: span end;
+  background-color: brown;
+}
+
+#imgRight {
+  grid-column-start: 10;
+  grid-column-end: span end;
+  grid-row-start: 8;
+  grid-row-end: span end;
+}
+
+/*# sourceMappingURL=style.css.map */

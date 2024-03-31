@@ -94,8 +94,10 @@ main {
   font-size: 2.7em;
   font-weight: 600;
   margin-bottom: 0.65em;
+  transition: 0.3s ease-in;
 }
 #textSlide p {
+  transition: 0.3s ease-in;
   margin-bottom: 1.5em;
 }
 #textSlide h4 {
